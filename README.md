@@ -49,7 +49,7 @@ The E-R diagram represents the conceptual design of the database, including all 
 
 The relational schema diagram represents the logical design of the database. It includes the tables, columns, primary keys, and foreign keys. The diagram can be found in the `Relational_Schema` folder:
 
-![Relational Schema](Relational Schema/relational_schema.png)
+![Relational Schema](Relational_Schema/relational_schema.png)
 
 ## Database Creation
 
