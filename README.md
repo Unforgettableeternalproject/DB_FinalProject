@@ -91,12 +91,12 @@ The `sample_queries.sql` script contains SQL queries that answer specific questi
    ```
 3. Create and populate the database:
    ```bash
-   sqlite3 automobile.db < Database/create_tables.sql
-   sqlite3 automobile.db < Database/insert_data.sql
+   mysql -u [username] -p < Database/create_tables.sql
+   mysql -u [username] -p < Database/insert_data.sql
    ```
 4. Run the sample queries:
    ```bash
-   sqlite3 automobile.db < Database/sample_queries.sql
+   mysql -u [username] -p < Database/sample_queries.sql > Results/query_results.txt
    ```
 5. (Optional) Run the provided interface:
    ```bash
