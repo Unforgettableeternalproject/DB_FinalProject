@@ -13,20 +13,20 @@ This project involves designing and implementing a relational database for an au
 The project repository is organized as follows:
 
 ```
-¢u¢w¢w ER_Diagram/
-¢x   ¢|¢w¢w er_diagram.png
-¢u¢w¢w Relational_Schema/
-¢x   ¢|¢w¢w relational_schema.png
-¢u¢w¢w Database/
-¢x   ¢u¢w¢w create_tables.sql
-¢x   ¢u¢w¢w insert_data.sql
-¢x   ¢|¢w¢w sample_queries.sql
-¢u¢w¢w Results/
-¢x   ¢|¢w¢w query_results.txt
-¢u¢w¢w src/
-¢x   ¢|¢w¢w main.py
-¢u¢w¢w README.md
-¢|¢w¢w requirements.txt
+â”œâ”€â”€ ER_Diagram/
+â”‚   â””â”€â”€ er_diagram.png
+â”œâ”€â”€ Relational_Schema/
+â”‚   â””â”€â”€ relational_schema.png
+â”œâ”€â”€ Database/
+â”‚   â”œâ”€â”€ create_tables.sql
+â”‚   â”œâ”€â”€ insert_data.sql
+â”‚   â””â”€â”€ sample_queries.sql
+â”œâ”€â”€ Results/
+â”‚   â””â”€â”€ query_results.txt
+â”œâ”€â”€ src/
+â”‚   â””â”€â”€ main.py
+â”œâ”€â”€ README.md
+â””â”€â”€ requirements.txt
 ```
 
 ### Folder Descriptions
@@ -49,7 +49,7 @@ The E-R diagram represents the conceptual design of the database, including all 
 
 The relational schema diagram represents the logical design of the database. It includes the tables, columns, primary keys, and foreign keys. The diagram can be found in the `Relational_Schema` folder:
 
-![Relational Schema](Relational_Schema/relational_schema.png)
+![Relational Schema](Relational Schema/relational_schema.png)
 
 ## Database Creation
 
