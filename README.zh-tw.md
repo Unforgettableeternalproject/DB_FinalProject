@@ -1,4 +1,5 @@
-﻿### README 模板 - 中文版
+﻿### 此專案提供多種語言之README文件
+[![Static Badge](https://img.shields.io/badge/lang-en-red)](https://github.com/Unforgettableeternalproject/DB_FinalProject/blob/main/README.md) [![Static Badge](https://img.shields.io/badge/lang-zh--tw-yellow)](https://github.com/Unforgettableeternalproject/DB_FinalProject/blob/main/README.zh-tw.md)
 
 ---
 
@@ -111,4 +112,5 @@ E-R 圖表示數據庫的概念設計，包括所有實體和關係集、主鍵�
 
 本專案展示了從概念設計到實施和查詢的完整數據庫開發流程。提供的 E-R 圖和關聯模式確保了數據庫設計的健壯性和可擴展性。示例數據和查詢展示了數據庫的功能，並提供了對公司運營的見解。
 
-如有任何問題或疑問，請聯繫顏榕嶙(Bernie)與吳傢澂，電子信箱: ptyc4076@gmail.com, charlie930320@gmail.com。
+如有任何問題或疑問，請聯繫顏榕嶙(Bernie)與吳傢澂，電子信箱: [![Static Badge](https://img.shields.io/badge/mail-Bernie-blue)
+](mailto:ptyc4076@gmail.com) [![Static Badge](https://img.shields.io/badge/mail-Charlie-green)](mailto:charlie930320@gmail.com)。

@@ -1,3 +1,8 @@
+### This project provides multilanguage README.md file
+[![Static Badge](https://img.shields.io/badge/lang-en-red)](https://github.com/Unforgettableeternalproject/DB_FinalProject/blob/main/README.md) [![Static Badge](https://img.shields.io/badge/lang-zh--tw-yellow)](https://github.com/Unforgettableeternalproject/DB_FinalProject/blob/main/README.zh-tw.md)
+
+---
+
 # Automobile Company Database Project
 
 ## Overview
@@ -107,6 +112,7 @@ The `sample_queries.sql` script contains SQL queries that answer specific questi
 
 This project demonstrates the full cycle of database development from conceptual design to implementation and querying. The provided E-R diagram and relational schema ensure a robust and scalable database design. The sample data and queries showcase the database's functionality and provide insights into the company's operations.
 
-For any questions or issues, please contact Bernie, Charlie at ptyc4076@gmail.com, charlie930320@gmail.com.
+For any questions or issues, please contact Bernie, Charlie here: [![Static Badge](https://img.shields.io/badge/mail-Bernie-blue)
+](mailto:ptyc4076@gmail.com), [![Static Badge](https://img.shields.io/badge/mail-Charlie-green)](mailto:charlie930320@gmail.com).
 
 ---
