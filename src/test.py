@@ -4,7 +4,7 @@ user_setting = {
     "user": "411177034",
     "password": "411177034",
     "host": "0.tcp.jp.ngrok.io",
-    "port": 15305,
+    "port": 11051,
     "database": "411177034"
 }
 
