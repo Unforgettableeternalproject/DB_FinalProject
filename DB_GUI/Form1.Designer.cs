@@ -1,6 +1,6 @@
 ﻿namespace DB_GUI
 {
-    partial class DBGUI
+    partial class GUI_Main
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,19 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Terminal = new Panel();
-            Options = new Panel();
-            Signature = new Panel();
             Datagrid = new Panel();
+            MainGrid = new DataGridView();
+            Options = new Panel();
+            Terminal = new Panel();
+            Credits = new Panel();
+            Datagrid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)MainGrid).BeginInit();
             SuspendLayout();
             // 
-            // Terminal
+            // Datagrid
             // 
-            Terminal.BackColor = Color.Transparent;
-            Terminal.Location = new Point(4, 420);
-            Terminal.Name = "Terminal";
-            Terminal.Size = new Size(623, 140);
-            Terminal.TabIndex = 0;
+            Datagrid.Controls.Add(MainGrid);
+            Datagrid.Location = new Point(2, 93);
+            Datagrid.Name = "Datagrid";
+            Datagrid.Size = new Size(623, 323);
+            Datagrid.TabIndex = 0;
+            // 
+            // MainGrid
+            // 
+            MainGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            MainGrid.Dock = DockStyle.Fill;
+            MainGrid.Location = new Point(0, 0);
+            MainGrid.Name = "MainGrid";
+            MainGrid.Size = new Size(623, 323);
+            MainGrid.TabIndex = 0;
             // 
             // Options
             // 
@@ -50,46 +62,47 @@
             Options.Size = new Size(213, 323);
             Options.TabIndex = 1;
             // 
-            // Signature
+            // Terminal
             // 
-            Signature.BackColor = Color.Transparent;
-            Signature.Location = new Point(631, 420);
-            Signature.Name = "Signature";
-            Signature.Size = new Size(213, 140);
-            Signature.TabIndex = 2;
+            Terminal.BackColor = Color.Transparent;
+            Terminal.Location = new Point(2, 421);
+            Terminal.Name = "Terminal";
+            Terminal.Size = new Size(623, 135);
+            Terminal.TabIndex = 2;
             // 
-            // Datagrid
+            // Credits
             // 
-            Datagrid.BackColor = Color.Transparent;
-            Datagrid.Location = new Point(1, 93);
-            Datagrid.Name = "Datagrid";
-            Datagrid.Size = new Size(626, 323);
-            Datagrid.TabIndex = 3;
+            Credits.BackColor = Color.Transparent;
+            Credits.Location = new Point(631, 421);
+            Credits.Name = "Credits";
+            Credits.Size = new Size(213, 140);
+            Credits.TabIndex = 3;
             // 
-            // DBGUI
+            // GUI_Main
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.DB_Frontend_Concept;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(844, 561);
-            Controls.Add(Datagrid);
-            Controls.Add(Signature);
-            Controls.Add(Options);
+            Controls.Add(Credits);
             Controls.Add(Terminal);
+            Controls.Add(Options);
+            Controls.Add(Datagrid);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Name = "DBGUI";
+            Name = "GUI_Main";
             Text = "Database Query Application";
-            TopMost = true;
-            Load += DB_Load;
+            Datagrid.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)MainGrid).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel Terminal;
-        private Panel Options;
-        private Panel Signature;
         private Panel Datagrid;
+        private DataGridView MainGrid;
+        private Panel Options;
+        private Panel Terminal;
+        private Panel Credits;
     }
 }

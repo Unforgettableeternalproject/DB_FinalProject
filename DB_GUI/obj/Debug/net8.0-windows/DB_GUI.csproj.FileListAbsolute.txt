@@ -3,7 +3,8 @@ C:\Users\Admin\Source\Repos\DB_FinalProject\DB_GUI\bin\Debug\net8.0-windows\DB_G
 C:\Users\Admin\Source\Repos\DB_FinalProject\DB_GUI\bin\Debug\net8.0-windows\DB_GUI.runtimeconfig.json
 C:\Users\Admin\Source\Repos\DB_FinalProject\DB_GUI\bin\Debug\net8.0-windows\DB_GUI.dll
 C:\Users\Admin\Source\Repos\DB_FinalProject\DB_GUI\bin\Debug\net8.0-windows\DB_GUI.pdb
-C:\Users\Admin\Source\Repos\DB_FinalProject\DB_GUI\obj\Debug\net8.0-windows\DB_GUI.DBGUI.resources
+C:\Users\Admin\Source\Repos\DB_FinalProject\DB_GUI\obj\Debug\net8.0-windows\DB_GUI.GUI_Main.resources
+C:\Users\Admin\Source\Repos\DB_FinalProject\DB_GUI\obj\Debug\net8.0-windows\DB_GUI.Properties.Resources.resources
 C:\Users\Admin\Source\Repos\DB_FinalProject\DB_GUI\obj\Debug\net8.0-windows\DB_GUI.csproj.GenerateResource.cache
 C:\Users\Admin\Source\Repos\DB_FinalProject\DB_GUI\obj\Debug\net8.0-windows\DB_GUI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Admin\Source\Repos\DB_FinalProject\DB_GUI\obj\Debug\net8.0-windows\DB_GUI.AssemblyInfoInputs.cache
@@ -15,4 +16,3 @@ C:\Users\Admin\Source\Repos\DB_FinalProject\DB_GUI\obj\Debug\net8.0-windows\refi
 C:\Users\Admin\Source\Repos\DB_FinalProject\DB_GUI\obj\Debug\net8.0-windows\DB_GUI.pdb
 C:\Users\Admin\Source\Repos\DB_FinalProject\DB_GUI\obj\Debug\net8.0-windows\DB_GUI.genruntimeconfig.cache
 C:\Users\Admin\Source\Repos\DB_FinalProject\DB_GUI\obj\Debug\net8.0-windows\ref\DB_GUI.dll
-C:\Users\Admin\Source\Repos\DB_FinalProject\DB_GUI\obj\Debug\net8.0-windows\DB_GUI.Properties.Resources.resources
