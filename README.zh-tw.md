@@ -3,45 +3,51 @@
 
 ---
 
-# 汽車公司數據庫專案
+# 汽車公司資料庫專案
 
 ## 概述
 
 本專案涉及設計和實現一個汽車公司的關聯數據庫。數據庫涵蓋公司的各個運營方面，包括車輛、品牌、型號、選項、經銷商、客戶、供應商和製造廠。專案包括以下組成部分：
 1. E-R 圖
-2. 關聯式模型
-3. 數據庫創建和填充
+2. 關聯模式
+3. 數據生成與插入
 4. 示例查詢和結果
+5. 用戶界面（GUI）
 
 ## 專案結構
 
 專案庫的組織結構如下：
 
-```
+```graphql
 ├── ER_Diagram/
 │   └── er_diagram.png
 ├── Relational_Schema/
 │   └── relational_schema.png
-├── Database/
-│   ├── create_tables.sql
-│   ├── insert_data.sql
-│   └── sample_queries.sql
 ├── Results/
-│   └── query_results.txt
+│   └── Example Query 1.png
+│   └── Example Query 2.png
+│   └── Example Query 3.png
+│   └── Example Query 4.png
+│   └── Example Query 5.png
+│   └── User_Interface_Snapshot.png
 ├── src/
-│   └── main.py
+│   └── Generator/
+│       └── RandomDataGenerator.py
+│   └── ConnectionTest.py
+│   └── ExampleQuery.py
 ├── README.md
+├── README.zh-tw.md
 └── requirements.txt
 ```
 
 ### 文件夾描述
 
 - **ER_Diagram**: 包含數據庫的 E-R 圖。
-- **Relational_Schema**: 包含關聯式模型圖。
-- **Database**: 用於創建表、插入數據和執行示例查詢的 SQL 腳本。
-- **Results**: 包含示例查詢的結果。
-- **src**: 用於與數據庫交互的源代碼（例如，一個簡單的命令行界面）。
-- **README.md**: 本 README 文件。
+- **Relational_Schema**: 包含關聯模式圖。
+- **Results**: 包含範例查詢的結果。
+- **src**: 包含數據生成器、數據庫連接測試和示例查詢腳本。
+- **README.md**: 英文版本的 README 文件。
+- **README.zh-tw.md**: 本 README 文件。
 - **requirements.txt**: 列出了運行專案所需的依賴項。
 
 ## E-R 圖
@@ -56,16 +62,9 @@ E-R 圖表示數據庫的概念設計，包括所有實體和關係集、主鍵�
 
 ![關聯模式](Relational_Schema/relational_schema.png)
 
-## 數據庫創建
-
-要創建和填充數據庫，請按以下順序執行 `Database` 文件夾中的 SQL 腳本：
-
-1. `create_tables.sql`: 此腳本創建所有必要的表。
-2. `insert_data.sql`: 此腳本向表中填充示例數據。
-
 ## 示例查詢
 
-`sample_queries.sql` 腳本包含回答專案要求的具體問題的 SQL 查詢。您可以運行此腳本以獲取結果，結果也提供在 `Results` 文件夾中。
+`src/ExampleQuery.py` 腳本包含回答專案要求的具體問題的 SQL 查詢。您可以運行此腳本以獲取結果，結果也提供在 `Results` 文件夾中。
 
 ### 示例查詢列表
 
@@ -74,6 +73,16 @@ E-R 圖表示數據庫的概念設計，包括所有實體和關係集、主鍵�
 3. **按銷量排名前兩位的品牌**: 識別過去一年銷量最高的兩個品牌。
 4. **SUV 銷量最佳的月份**: 確定 SUV 銷量最高的月份。
 5. **平均庫存時間最長的經銷商**: 查找將車輛保持在庫存中時間最長的經銷商。
+
+## 用戶界面（GUI）
+
+我們開發了一個用於查詢的 GUI，以方便使用。這個 GUI 可以從以下存放庫獲得：
+[Wyrm-DB_GUI](https://github.com/Unforgettableeternalproject/Wyrm-DB_GUI-)
+
+使用者介面截圖:
+![截圖](Results/User_Interface_Snapshot.png)
+
+該 GUI 提供了連接到 MariaDB 數據庫並檢索信息的界面。用戶可以通過 GUI 輸入查詢並直接在應用程序中顯示結果。
 
 ## 運行專案
 
@@ -94,18 +103,15 @@ E-R 圖表示數據庫的概念設計，包括所有實體和關係集、主鍵�
    ```bash
    pip install -r requirements.txt
    ```
-3. 創建並填充數據庫：
+3. 運行示例查詢：
    ```bash
-   mysql -u [username] -p < Database/create_tables.sql
-   mysql -u [username] -p < Database/insert_data.sql
+   python src/ExampleQuery.py
    ```
-4. 運行示例查詢：
+4. （可選）運行提供的 GUI：
    ```bash
-   mysql -u [username] -p < Database/sample_queries.sql > Results/query_results.txt
-   ```
-5. （可選）運行提供的界面：
-   ```bash
-   python src/main.py
+   git clone https://github.com/Unforgettableeternalproject/Wyrm-DB_GUI-
+   cd Wyrm-DB_GUI-
+   # 按照 Wyrm-DB_GUI- 的 README 指示配置和運行
    ```
 
 ## 結論

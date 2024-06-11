@@ -12,25 +12,31 @@ This project involves designing and implementing a relational database for an au
 2. Relational Schema
 3. Database Creation and Population
 4. Sample Queries and Results
+5. User Interface (Wyrm)
 
 ## Project Structure
 
 The project repository is organized as follows:
 
-```
+```graphql
 ├── ER_Diagram/
 │   └── er_diagram.png
 ├── Relational_Schema/
 │   └── relational_schema.png
-├── Database/
-│   ├── create_tables.sql
-│   ├── insert_data.sql
-│   └── sample_queries.sql
 ├── Results/
-│   └── query_results.txt
+│   └── Example Query 1.png
+│   └── Example Query 2.png
+│   └── Example Query 3.png
+│   └── Example Query 4.png
+│   └── Example Query 5.png
+│   └── User_Interface_Snapshot.png
 ├── src/
-│   └── main.py
+│   └── Generator/
+│       └── RandomDataGenerator.py
+│   └── ConnectionTest.py
+│   └── ExampleQuery.py
 ├── README.md
+├── README.zh-tw.md
 └── requirements.txt
 ```
 
@@ -38,11 +44,11 @@ The project repository is organized as follows:
 
 - **ER_Diagram**: Contains the E-R diagram of the database.
 - **Relational_Schema**: Contains the relational schema diagram.
-- **Database**: SQL scripts to create tables, insert data, and execute sample queries.
 - **Results**: Contains the results of sample queries.
-- **src**: Source code for interfacing with the database (e.g., a simple command-line interface).
+- **src**: Contains the data generator, database connection test, and example query scripts.
 - **README.md**: This README file.
-- **requirements.txt**: Lists any dependencies required for running the project.
+- **README.zh-tw.md**: This README file in Traditional Chinese.
+- **requirements.txt**: Lists the dependencies required for running the project.
 
 ## E-R Diagram
 
@@ -56,13 +62,6 @@ The relational schema diagram represents the logical design of the database. It 
 
 ![Relational Schema](Relational_Schema/relational_schema.png)
 
-## Database Creation
-
-To create and populate the database, execute the SQL scripts in the `Database` folder in the following order:
-
-1. `create_tables.sql`: This script creates all the necessary tables.
-2. `insert_data.sql`: This script populates the tables with sample data.
-
 ## Sample Queries
 
 The `sample_queries.sql` script contains SQL queries that answer specific questions as required by the project. You can run this script to get the results, which are also provided in the `Results` folder.
@@ -74,6 +73,15 @@ The `sample_queries.sql` script contains SQL queries that answer specific questi
 3. **Top 2 Brands by Unit Sales**: Identifies the top 2 brands by unit sales in the past year.
 4. **Best Month for SUV Sales**: Determines the month(s) with the highest SUV sales.
 5. **Dealers with Longest Inventory Time**: Finds dealers who keep vehicles in inventory for the longest average time.
+
+## User Interface (GUI)
+We have developed a GUI for querying to facilitate usage. This GUI can be obtained from the following repository:
+[Wyrm-DB_GUI](https://github.com/Unforgettableeternalproject/Wyrm-DB_GUI-)
+
+Snapshot:
+![截圖](Results/User_Interface_Snapshot.png)
+
+This GUI provides an interface to connect to a MariaDB database and retrieve information. Users can input queries through the GUI and view results directly within the application.
 
 ## Running the Project
 
@@ -94,18 +102,15 @@ The `sample_queries.sql` script contains SQL queries that answer specific questi
    ```bash
    pip install -r requirements.txt
    ```
-3. Create and populate the database:
+3. Run the sample queries:
    ```bash
-   mysql -u [username] -p < Database/create_tables.sql
-   mysql -u [username] -p < Database/insert_data.sql
+   python src/ExampleQuery.py
    ```
-4. Run the sample queries:
+4. (Optional) Run the provided interface:
    ```bash
-   mysql -u [username] -p < Database/sample_queries.sql > Results/query_results.txt
-   ```
-5. (Optional) Run the provided interface:
-   ```bash
-   python src/main.py
+   git clone https://github.com/Unforgettableeternalproject/Wyrm-DB_GUI-
+   cd Wyrm-DB_GUI-
+   # Follow the instructions in Wyrm-DB_GUI-'s README to configure and run
    ```
 
 ## Conclusion
