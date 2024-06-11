@@ -1,1 +1,5 @@
 .vs/
+.idea/
+DB_GUI/bin/
+DB_GUI/obj/
+.pytest_cache/
