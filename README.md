@@ -75,7 +75,12 @@ The `sample_queries.sql` script contains SQL queries that answer specific questi
 4. **Best Month for SUV Sales**: Determines the month(s) with the highest SUV sales.
 5. **Dealers with Longest Inventory Time**: Finds dealers who keep vehicles in inventory for the longest average time.
 
+Our query results are in the `Results` folder.
+
+As for our source code, you can find it in the `src/ExampleQuery.py` folder.
+
 ## User Interface (GUI)
+
 We have developed a GUI for querying to facilitate usage. This GUI can be obtained from the following repository:
 [Wyrm-DB_GUI](https://github.com/Unforgettableeternalproject/Wyrm-DB_GUI-)
 
