@@ -119,7 +119,7 @@ if __name__ == "__main__":
         "user": "411177034",
         "password": "411177034",
         "host": "0.tcp.jp.ngrok.io",
-        "port": 11051,
+        "port": 12592,
         "database": "411177034"
     }
 
