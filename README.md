@@ -2,8 +2,9 @@
 [![Static Badge](https://img.shields.io/badge/lang-en-red)](https://github.com/Unforgettableeternalproject/DB_FinalProject/blob/main/README.md) [![Static Badge](https://img.shields.io/badge/lang-zh--tw-yellow)](https://github.com/Unforgettableeternalproject/DB_FinalProject/blob/main/README.zh-tw.md)
 
 ---
-
 # Automobile Company Database Project
+
+### Project Members: 411177013 顏榕嶙、 411177034 吳傢澂
 
 ## Overview
 
